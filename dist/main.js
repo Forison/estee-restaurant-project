@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"body{\\n    margin: 0;\\n    padding: 0;\\n}\\nnav{\\n    /* background: conic-gradient(from 290deg, #ff0000, #000); */\\n    background-image: linear-gradient( #ff0000, #000);\\n    box-shadow: 0 8px 6px -6px black;\\n    height: 50px;\\n    position: fixed;\\n    width: 100%;\\n}\\n.navWrap{\\n   display: flex;\\n}\\n.logoWrap{\\n    height: 50px;\\n    width: 20%;\\n}\\n\\n.linkWrap{\\n    align-items: center;\\n    display: flex;\\n    height: 50px;\\n    justify-content: space-around;\\n    margin-left: auto;\\n    width: 50%;\\n}\\n.logo{\\n    color: #fff;\\n    float: right;\\n    font-family: monospace;\\n    font-size: 35px;\\n    font-weight: 700;\\n    padding: 5px 30px;\\n    text-shadow: 1px 1px black;\\n}\\n.logo:hover{\\n    color: #ffffffd8;\\n}\\na{\\n    color: #fff;\\n    text-decoration: none;\\n}\\na:hover{\\n    color: #ffffffd8;\\n}\", \"\"]);\n\n\n//# sourceURL=webpack:///./src/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Imports\nvar getUrl = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/getUrl.js */ \"./node_modules/css-loader/dist/runtime/getUrl.js\");\nvar ___CSS_LOADER_URL___0___ = getUrl(__webpack_require__(/*! ./component/images/cleaning-restaurant-kitchen.jpg */ \"./src/component/images/cleaning-restaurant-kitchen.jpg\"));\n// Module\nexports.push([module.i, \"body{\\n    margin: 0;\\n    padding: 0;\\n    background-image: linear-gradient( #ff0000, #000);\\n}\\nnav{\\n    background-image: linear-gradient( #ff0000, #000);\\n    box-shadow: 0 8px 6px -6px black;\\n    height: 50px;\\n    width: 100%;\\n}\\n.navWrap{\\n   display: flex;\\n}\\n.logoWrap{\\n    height: 50px;\\n    width: 20%;\\n}\\n\\n.linkWrap{\\n    align-items: center;\\n    display: flex;\\n    height: 50px;\\n    justify-content: space-around;\\n    margin-left: auto;\\n    width: 70%;\\n}\\n.logo{\\n    color: #fff;\\n    float: right;\\n    font-family: monospace;\\n    font-size: 35px;\\n    font-weight: 700;\\n    padding: 5px 30px;\\n    text-shadow: 1px 1px black;\\n}\\n.logo:hover{\\n    color: #ffffffd8;\\n}\\na{\\n    color: #fff;\\n    text-decoration: none;\\n}\\na:hover{\\n    color: #ffffffd8;\\n}\\n/* container  */\\n.container{\\n    background-image: url(\" + ___CSS_LOADER_URL___0___ + \");\\n    background-size: cover;\\n    background-repeat: no-repeat;\\n    height: 600px;\\n}\\n.welcome{\\n    border-radius: 50%;\\n    height: 250px;\\n    position: absolute;\\n    top: 400px;\\n    left: 70%;\\n    width: 250px;\\n}\\n/* // welcome photo */\\n.imgFluid{\\n    border:10px solid #fff;\\n    border-radius: 100%;\\n    width: 100%;\\n    z-index: 2;\\n}\", \"\"]);\n\n\n//# sourceURL=webpack:///./src/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -109,6 +109,18 @@ eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
+/*!********************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nmodule.exports = function (url, needQuotes) {\n  // eslint-disable-next-line no-underscore-dangle, no-param-reassign\n  url = url.__esModule ? url.default : url;\n\n  if (typeof url !== 'string') {\n    return url;\n  } // If url is already wrapped in quotes, remove them\n\n\n  if (/^['\"].*['\"]$/.test(url)) {\n    // eslint-disable-next-line no-param-reassign\n    url = url.slice(1, -1);\n  } // Should url be wrapped?\n  // See https://drafts.csswg.org/css-values-3/#urls\n\n\n  if (/[\"'() \\t\\n]/.test(url) || needQuotes) {\n    return \"\\\"\".concat(url.replace(/\"/g, '\\\\\"').replace(/\\n/g, '\\\\n'), \"\\\"\");\n  }\n\n  return url;\n};\n\n//# sourceURL=webpack:///./node_modules/css-loader/dist/runtime/getUrl.js?");
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js":
 /*!****************************************************************************!*\
   !*** ./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js ***!
@@ -121,6 +133,51 @@ eval("\n\nvar stylesInDom = {};\n\nvar isOldIE = function isOldIE() {\n  var mem
 
 /***/ }),
 
+/***/ "./src/component/gifs/vapourtea.gif":
+/*!******************************************!*\
+  !*** ./src/component/gifs/vapourtea.gif ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"17f11cabb4ddfa0b45e39771b95a9add.gif\";\n\n//# sourceURL=webpack:///./src/component/gifs/vapourtea.gif?");
+
+/***/ }),
+
+/***/ "./src/component/homepage.js":
+/*!***********************************!*\
+  !*** ./src/component/homepage.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return main; });\n/* harmony import */ var _images_welcome_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./images/welcome.jpg */ \"./src/component/images/welcome.jpg\");\n/* harmony import */ var _images_welcome_jpg__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_images_welcome_jpg__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _gifs_vapourtea_gif__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./gifs/vapourtea.gif */ \"./src/component/gifs/vapourtea.gif\");\n/* harmony import */ var _gifs_vapourtea_gif__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_gifs_vapourtea_gif__WEBPACK_IMPORTED_MODULE_1__);\n\n\nconst main = () => {\n\tlet container = document.createElement('div');\n\tcontainer.classList.add('container');\n\n\tlet welcome = document.createElement('div');\n\twelcome.classList.add('welcome');\n\tcontainer.appendChild(welcome);\n\n\tconst welcomePhoto = new Image();\n\twelcomePhoto.classList.add('imgFluid');\n\twelcomePhoto.src = _images_welcome_jpg__WEBPACK_IMPORTED_MODULE_0___default.a;\n\twelcome.appendChild(welcomePhoto);\n\treturn container\n}\ndocument.body.appendChild(main())\n\n\n//# sourceURL=webpack:///./src/component/homepage.js?");
+
+/***/ }),
+
+/***/ "./src/component/images/cleaning-restaurant-kitchen.jpg":
+/*!**************************************************************!*\
+  !*** ./src/component/images/cleaning-restaurant-kitchen.jpg ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"8c13d26c956538aa2ec78ecc7d510670.jpg\";\n\n//# sourceURL=webpack:///./src/component/images/cleaning-restaurant-kitchen.jpg?");
+
+/***/ }),
+
+/***/ "./src/component/images/welcome.jpg":
+/*!******************************************!*\
+  !*** ./src/component/images/welcome.jpg ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"60b02ed54c058ec5c0de45af0c2b17d4.jpg\";\n\n//# sourceURL=webpack:///./src/component/images/welcome.jpg?");
+
+/***/ }),
+
 /***/ "./src/component/navigation.js":
 /*!*************************************!*\
   !*** ./src/component/navigation.js ***!
@@ -129,7 +186,7 @@ eval("\n\nvar stylesInDom = {};\n\nvar isOldIE = function isOldIE() {\n  var mem
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return navigation; });\nconst navigation = () => {\n\tlet navbar = document.createElement('nav');\n\tlet navWrap = document.createElement('div');\n\tnavWrap.classList.add('navWrap');\n\tnavbar.appendChild(navWrap);\n\n\tlet logoWrap = document.createElement('div');\n\tlet linkWrap = document.createElement('div');\n\tlogoWrap.classList.add('logoWrap');\n\tlinkWrap.classList.add('linkWrap');\n\tnavWrap.appendChild(logoWrap);\n\tnavWrap.appendChild(linkWrap);\n\t// create logo for navbar\n\tlet logo = document.createElement('a');\n\tlogo.classList.add('logo');\n\tlogoWrap.appendChild(logo);\n\tlogo.innerHTML = \"Linda\"\n\t// create links for navbar\n\tlet navLinkOne = document.createElement('span');\n\tlet navAnchorOne = document.createElement('a');\n\tnavLinkOne.appendChild(navAnchorOne);\n\tlinkWrap.appendChild(navLinkOne);\n\tnavAnchorOne.innerHTML = 'linkOne'\n\tnavAnchorOne.href = \"#\"\n\n\tlet navLinkTwo = document.createElement('span');\n\tlet navAnchorTwo = document.createElement('a');\n\tnavLinkTwo.appendChild(navAnchorTwo);\n\tlinkWrap.appendChild(navLinkTwo);\n\tnavAnchorTwo.innerHTML = 'linkTwo'\n\tnavAnchorTwo.href = \"#\"\n\n\tlet navLinkThree = document.createElement('span');\n\tlet navAnchorThree = document.createElement('a');\n\tnavLinkThree.appendChild(navAnchorThree);\n\tlinkWrap.appendChild(navLinkThree);\n\tnavAnchorThree.innerHTML = 'linkThree'\n\tnavAnchorThree.href = \"#\"\n\n\tlet navLinkFour = document.createElement('span');\n\tlet navAnchorFour = document.createElement('a');\n\tnavLinkFour.appendChild(navAnchorFour);\n\tlinkWrap.appendChild(navLinkFour);\n\tnavAnchorFour.innerHTML = 'linkFour'\n\tnavAnchorFour.href = \"#\"\n\n\tlet navLinkFive = document.createElement('span');\n\tlet navAnchorFive = document.createElement('a');\n\tnavLinkFive.appendChild(navAnchorFive);\n\tlinkWrap.appendChild(navLinkFive);\n\tnavAnchorFive.href = \"#\"\n\tnavAnchorFive.innerHTML = 'linkFive'\n\n\treturn navbar\n}\ndocument.body.appendChild(navigation())\n\n\n//# sourceURL=webpack:///./src/component/navigation.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return navigation; });\nconst navigation = () => {\n\tlet navbar = document.createElement('nav');\n\tlet navWrap = document.createElement('div');\n\tnavWrap.classList.add('navWrap');\n\tnavbar.appendChild(navWrap);\n\n\tlet logoWrap = document.createElement('div');\n\tlet linkWrap = document.createElement('div');\n\tlogoWrap.classList.add('logoWrap');\n\tlinkWrap.classList.add('linkWrap');\n\tnavWrap.appendChild(logoWrap);\n\tnavWrap.appendChild(linkWrap);\n\t// create logo for navbar\n\tlet logo = document.createElement('a');\n\tlogo.classList.add('logo');\n\tlogoWrap.appendChild(logo);\n\tlogo.innerHTML = \"Linda\"\n\t// create links for navbar\n\tlet navLinkOne = document.createElement('span');\n\tlet navAnchorOne = document.createElement('a');\n\tnavLinkOne.appendChild(navAnchorOne);\n\tlinkWrap.appendChild(navLinkOne);\n\tnavAnchorOne.innerHTML = 'Chicken'\n\tnavAnchorOne.href = \"#\"\n\n\tlet navLinkTwo = document.createElement('span');\n\tlet navAnchorTwo = document.createElement('a');\n\tnavLinkTwo.appendChild(navAnchorTwo);\n\tlinkWrap.appendChild(navLinkTwo);\n\tnavAnchorTwo.innerHTML = 'Sandwich'\n\tnavAnchorTwo.href = \"#\"\n\n\tlet navLinkThree = document.createElement('span');\n\tlet navAnchorThree = document.createElement('a');\n\tnavLinkThree.appendChild(navAnchorThree);\n\tlinkWrap.appendChild(navLinkThree);\n\tnavAnchorThree.innerHTML = 'Meal';\n\tnavAnchorThree.href = \"#\";\n\n\tlet navLinkFour = document.createElement('span');\n\tlet navAnchorFour = document.createElement('a');\n\tnavLinkFour.appendChild(navAnchorFour);\n\tlinkWrap.appendChild(navLinkFour);\n\tnavAnchorFour.innerHTML = '$5 fill ups';\n\tnavAnchorFour.href = \"#\";\n\n\tlet navLinkFive = document.createElement('span');\n\tlet navAnchorFive = document.createElement('a');\n\tnavLinkFive.appendChild(navAnchorFive);\n\tlinkWrap.appendChild(navLinkFive);\n\tnavAnchorFive.href = \"#\";\n\tnavAnchorFive.innerHTML = 'Sides';\n\n\tlet navLinkSix = document.createElement('span');\n\tlet navAnchorSix = document.createElement('a');\n\tnavLinkSix.appendChild(navAnchorSix);\n\tlinkWrap.appendChild(navLinkSix);\n\tnavAnchorSix.href = \"#\";\n\tnavAnchorSix.innerHTML = 'Classic';\n\n\tlet navLinkSeven = document.createElement('span');\n\tlet navAnchorSeven = document.createElement('a');\n\tnavLinkSeven.appendChild(navAnchorSeven);\n\tlinkWrap.appendChild(navLinkSeven);\n\tnavAnchorSeven.href = \"#\";\n\tnavAnchorSeven.innerHTML = 'Dessert';\n\n\tlet navLinkEight = document.createElement('span');\n\tlet navAnchorEight = document.createElement('a');\n\tnavLinkEight.appendChild(navAnchorEight);\n\tlinkWrap.appendChild(navLinkEight);\n\tnavAnchorEight.href = \"#\";\n\tnavAnchorEight.innerHTML = 'Drinks';\n\n\tlet navLinkNine = document.createElement('span');\n\tlet navAnchorNine = document.createElement('a');\n\tnavLinkNine.appendChild(navAnchorNine);\n\tlinkWrap.appendChild(navLinkNine);\n\tnavAnchorNine.href = \"#\";\n\tnavAnchorNine.innerHTML = 'Sauce';\n\n\treturn navbar\n}\ndocument.body.appendChild(navigation())\n\n\n//# sourceURL=webpack:///./src/component/navigation.js?");
 
 /***/ }),
 
@@ -141,7 +198,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _component_navigation_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./component/navigation.js */ \"./src/component/navigation.js\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_style_css__WEBPACK_IMPORTED_MODULE_1__);\n// import 'lodash';\n\n\n\nObject(_component_navigation_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _component_navigation_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./component/navigation.js */ \"./src/component/navigation.js\");\n/* harmony import */ var _component_homepage_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./component/homepage.js */ \"./src/component/homepage.js\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_style_css__WEBPACK_IMPORTED_MODULE_2__);\n// import 'lodash';\n\n\n\n\n\nObject(_component_navigation_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\nObject(_component_homepage_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 

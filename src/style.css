@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    background-image: linear-gradient( #ff0000, #000);
 }
 nav{
     background-image: linear-gradient( #ff0000, #000);
@@ -22,7 +23,7 @@ nav{
     height: 50px;
     justify-content: space-around;
     margin-left: auto;
-    width: 50%;
+    width: 70%;
 }
 .logo{
     color: #fff;
@@ -45,14 +46,31 @@ a:hover{
 }
 /* container  */
 .container{
-    /* background: conic-gradient(from 290deg, #ff0000, #fff); */
-    height: 600px;
-    width: 100%;
+    background-image: url(./component/images/cleaning-restaurant-kitchen.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
 }
 .welcome{
-    border:5px solid black;
     border-radius: 50%;
-    margin: 15% auto;
     height: 250px;
+    position: absolute;
+    top: 320px;
+    left: 70%;
     width: 250px;
+}
+/* // welcome photo */
+.imgFluid{
+    border:10px solid #fff;
+    border-radius: 100%;
+    width: 100%;
+    z-index: 2;
+}
+.bottom{
+    color: #fff;
+    font-size: 30px;
+    font-weight: bolder;
+    left: 200px;
+    position: absolute;
+    top: 580px;
 }
