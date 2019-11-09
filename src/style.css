@@ -3,7 +3,6 @@ body{
     padding: 0;
 }
 nav{
-    /* background: conic-gradient(from 290deg, #ff0000, #000); */
     background-image: linear-gradient( #ff0000, #000);
     box-shadow: 0 8px 6px -6px black;
     height: 50px;
@@ -43,4 +42,17 @@ a{
 }
 a:hover{
     color: #ffffffd8;
+}
+/* container  */
+.container{
+    /* background: conic-gradient(from 290deg, #ff0000, #fff); */
+    height: 600px;
+    width: 100%;
+}
+.welcome{
+    border:5px solid black;
+    border-radius: 50%;
+    margin: 15% auto;
+    height: 250px;
+    width: 250px;
 }

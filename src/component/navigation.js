@@ -20,36 +20,64 @@ const navigation = () => {
 	let navAnchorOne = document.createElement('a');
 	navLinkOne.appendChild(navAnchorOne);
 	linkWrap.appendChild(navLinkOne);
-	navAnchorOne.innerHTML = 'linkOne'
+	navAnchorOne.innerHTML = 'Chicken'
 	navAnchorOne.href = "#"
 
 	let navLinkTwo = document.createElement('span');
 	let navAnchorTwo = document.createElement('a');
 	navLinkTwo.appendChild(navAnchorTwo);
 	linkWrap.appendChild(navLinkTwo);
-	navAnchorTwo.innerHTML = 'linkTwo'
+	navAnchorTwo.innerHTML = 'Sandwich'
 	navAnchorTwo.href = "#"
 
 	let navLinkThree = document.createElement('span');
 	let navAnchorThree = document.createElement('a');
 	navLinkThree.appendChild(navAnchorThree);
 	linkWrap.appendChild(navLinkThree);
-	navAnchorThree.innerHTML = 'linkThree'
-	navAnchorThree.href = "#"
+	navAnchorThree.innerHTML = 'Meal';
+	navAnchorThree.href = "#";
 
 	let navLinkFour = document.createElement('span');
 	let navAnchorFour = document.createElement('a');
 	navLinkFour.appendChild(navAnchorFour);
 	linkWrap.appendChild(navLinkFour);
-	navAnchorFour.innerHTML = 'linkFour'
-	navAnchorFour.href = "#"
+	navAnchorFour.innerHTML = '$5 fill ups';
+	navAnchorFour.href = "#";
 
 	let navLinkFive = document.createElement('span');
 	let navAnchorFive = document.createElement('a');
 	navLinkFive.appendChild(navAnchorFive);
 	linkWrap.appendChild(navLinkFive);
-	navAnchorFive.href = "#"
-	navAnchorFive.innerHTML = 'linkFive'
+	navAnchorFive.href = "#";
+	navAnchorFive.innerHTML = 'Sides';
+
+	let navLinkSix = document.createElement('span');
+	let navAnchorSix = document.createElement('a');
+	navLinkSix.appendChild(navAnchorSix);
+	linkWrap.appendChild(navLinkSix);
+	navAnchorSix.href = "#";
+	navAnchorSix.innerHTML = 'Classic';
+
+	let navLinkSeven = document.createElement('span');
+	let navAnchorSeven = document.createElement('a');
+	navLinkSeven.appendChild(navAnchorSeven);
+	linkWrap.appendChild(navLinkSeven);
+	navAnchorSeven.href = "#";
+	navAnchorSeven.innerHTML = 'Dessert';
+
+	let navLinkEight = document.createElement('span');
+	let navAnchorEight = document.createElement('a');
+	navLinkEight.appendChild(navAnchorEight);
+	linkWrap.appendChild(navLinkEight);
+	navAnchorEight.href = "#";
+	navAnchorEight.innerHTML = 'Drinks';
+
+	let navLinkNine = document.createElement('span');
+	let navAnchorNine = document.createElement('a');
+	navLinkNine.appendChild(navAnchorNine);
+	linkWrap.appendChild(navLinkNine);
+	navAnchorNine.href = "#";
+	navAnchorNine.innerHTML = 'Sauce';
 
 	return navbar
 }
