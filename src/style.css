@@ -46,10 +46,51 @@ a:hover{
 }
 /* container  */
 .container{
-    background-image: url(./component/images/cleaning-restaurant-kitchen.jpg);
+    /* background-image: url(./component/images/cleaning-restaurant-kitchen.jpg); */
     background-size: cover;
     background-repeat: no-repeat;
     height: 500px;
+}
+.mainImg{
+	width: 100%;
+	height: 100%;
+}
+.bar{
+	height: 50px;
+	left: 100px;
+	position: absolute;
+	top: 240px;
+	width: 85%;
+}
+
+.nextAndPrev{
+	display: flex;
+	justify-content: space-between;
+}
+
+.next{
+  border-top: 20px solid transparent;
+  border-right: 30px solid #fff;
+	border-bottom: 20px solid transparent;
+	height: 0;
+	padding-left: 100px;
+	width: 0;
+	z-index: 3;
+}
+.next:hover{
+	border-right: 30px solid #f00202;
+}
+.prev{
+  border-top: 20px solid transparent;
+  border-left: 30px solid #fff;
+	border-bottom: 20px solid transparent;
+	height: 0;
+	padding-right: 100px;
+	width: 0;
+  z-index: 3;	
+}
+.prev:hover{
+	border-left: 30px solid #19f005;
 }
 .welcome{
     border-radius: 50%;
@@ -68,9 +109,9 @@ a:hover{
 }
 .bottom{
     color: #fff;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bolder;
     left: 200px;
     position: absolute;
-    top: 580px;
+    top: 540px;
 }

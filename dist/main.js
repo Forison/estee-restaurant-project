@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Imports\nvar getUrl = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/getUrl.js */ \"./node_modules/css-loader/dist/runtime/getUrl.js\");\nvar ___CSS_LOADER_URL___0___ = getUrl(__webpack_require__(/*! ./component/images/cleaning-restaurant-kitchen.jpg */ \"./src/component/images/cleaning-restaurant-kitchen.jpg\"));\n// Module\nexports.push([module.i, \"body{\\n    margin: 0;\\n    padding: 0;\\n    background-image: linear-gradient( #ff0000, #000);\\n}\\nnav{\\n    background-image: linear-gradient( #ff0000, #000);\\n    box-shadow: 0 8px 6px -6px black;\\n    height: 50px;\\n    width: 100%;\\n}\\n.navWrap{\\n   display: flex;\\n}\\n.logoWrap{\\n    height: 50px;\\n    width: 20%;\\n}\\n\\n.linkWrap{\\n    align-items: center;\\n    display: flex;\\n    height: 50px;\\n    justify-content: space-around;\\n    margin-left: auto;\\n    width: 70%;\\n}\\n.logo{\\n    color: #fff;\\n    float: right;\\n    font-family: monospace;\\n    font-size: 35px;\\n    font-weight: 700;\\n    padding: 5px 30px;\\n    text-shadow: 1px 1px black;\\n}\\n.logo:hover{\\n    color: #ffffffd8;\\n}\\na{\\n    color: #fff;\\n    text-decoration: none;\\n}\\na:hover{\\n    color: #ffffffd8;\\n}\\n/* container  */\\n.container{\\n    background-image: url(\" + ___CSS_LOADER_URL___0___ + \");\\n    background-size: cover;\\n    background-repeat: no-repeat;\\n    height: 600px;\\n}\\n.welcome{\\n    border-radius: 50%;\\n    height: 250px;\\n    position: absolute;\\n    top: 400px;\\n    left: 70%;\\n    width: 250px;\\n}\\n/* // welcome photo */\\n.imgFluid{\\n    border:10px solid #fff;\\n    border-radius: 100%;\\n    width: 100%;\\n    z-index: 2;\\n}\", \"\"]);\n\n\n//# sourceURL=webpack:///./src/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"body{\\n    margin: 0;\\n    padding: 0;\\n    background-image: linear-gradient( #ff0000, #000);\\n}\\nnav{\\n    background-image: linear-gradient( #ff0000, #000);\\n    box-shadow: 0 8px 6px -6px black;\\n    height: 50px;\\n    width: 100%;\\n}\\n.navWrap{\\n   display: flex;\\n}\\n.logoWrap{\\n    height: 50px;\\n    width: 20%;\\n}\\n\\n.linkWrap{\\n    align-items: center;\\n    display: flex;\\n    height: 50px;\\n    justify-content: space-around;\\n    margin-left: auto;\\n    width: 70%;\\n}\\n.logo{\\n    color: #fff;\\n    float: right;\\n    font-family: monospace;\\n    font-size: 35px;\\n    font-weight: 700;\\n    padding: 5px 30px;\\n    text-shadow: 1px 1px black;\\n}\\n.logo:hover{\\n    color: #ffffffd8;\\n}\\na{\\n    color: #fff;\\n    text-decoration: none;\\n}\\na:hover{\\n    color: #ffffffd8;\\n}\\n/* container  */\\n.container{\\n    /* background-image: url(./component/images/cleaning-restaurant-kitchen.jpg); */\\n    background-size: cover;\\n    background-repeat: no-repeat;\\n    height: 500px;\\n}\\n.nextAndPrev{\\n\\tdisplay: flex;\\n\\tjustify-content: space-between;\\n}\\n\\n.next{\\n  border-top: 20px solid transparent;\\n  border-right: 30px solid #fff;\\n\\tborder-bottom: 20px solid transparent;\\n\\tmargin-top: 220px;\\n\\theight: 0;\\n\\tpadding-left: 100px;\\n\\twidth: 0;\\n\\tz-index: 3;\\n}\\n.next:hover{\\n\\tborder-right: 30px solid #dddcdc;\\n}\\n.prev{\\n  border-top: 20px solid transparent;\\n  border-left: 30px solid #fff;\\n\\tborder-bottom: 20px solid transparent;\\n\\tmargin-top: 220px;\\n\\theight: 0;\\n\\tpadding-right: 100px;\\n\\twidth: 0;\\n  z-index: 3;\\t\\n}\\n.prev:hover{\\n\\tborder-left: 30px solid #dddcdc;\\n}\\n.welcome{\\n    border-radius: 50%;\\n    height: 250px;\\n    position: absolute;\\n    top: 320px;\\n    left: 70%;\\n    width: 250px;\\n}\\n/* // welcome photo */\\n.imgFluid{\\n    border:10px solid #fff;\\n    border-radius: 100%;\\n    width: 100%;\\n    z-index: 2;\\n}\\n.bottom{\\n    color: #fff;\\n    font-size: 40px;\\n    font-weight: bolder;\\n    left: 200px;\\n    position: absolute;\\n    top: 540px;\\n}\", \"\"]);\n\n\n//# sourceURL=webpack:///./src/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -106,18 +106,6 @@ eval("exports = module.exports = __webpack_require__(/*! ../node_modules/css-loa
 
 "use strict";
 eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n  Author Tobias Koppers @sokra\n*/\n// css base code, injected by the css-loader\n// eslint-disable-next-line func-names\nmodule.exports = function (useSourceMap) {\n  var list = []; // return the list of modules as css string\n\n  list.toString = function toString() {\n    return this.map(function (item) {\n      var content = cssWithMappingToString(item, useSourceMap);\n\n      if (item[2]) {\n        return \"@media \".concat(item[2], \"{\").concat(content, \"}\");\n      }\n\n      return content;\n    }).join('');\n  }; // import a list of modules into the list\n  // eslint-disable-next-line func-names\n\n\n  list.i = function (modules, mediaQuery) {\n    if (typeof modules === 'string') {\n      // eslint-disable-next-line no-param-reassign\n      modules = [[null, modules, '']];\n    }\n\n    var alreadyImportedModules = {};\n\n    for (var i = 0; i < this.length; i++) {\n      // eslint-disable-next-line prefer-destructuring\n      var id = this[i][0];\n\n      if (id != null) {\n        alreadyImportedModules[id] = true;\n      }\n    }\n\n    for (var _i = 0; _i < modules.length; _i++) {\n      var item = modules[_i]; // skip already imported module\n      // this implementation is not 100% perfect for weird media query combinations\n      // when a module is imported multiple times with different media queries.\n      // I hope this will never occur (Hey this way we have smaller bundles)\n\n      if (item[0] == null || !alreadyImportedModules[item[0]]) {\n        if (mediaQuery && !item[2]) {\n          item[2] = mediaQuery;\n        } else if (mediaQuery) {\n          item[2] = \"(\".concat(item[2], \") and (\").concat(mediaQuery, \")\");\n        }\n\n        list.push(item);\n      }\n    }\n  };\n\n  return list;\n};\n\nfunction cssWithMappingToString(item, useSourceMap) {\n  var content = item[1] || ''; // eslint-disable-next-line prefer-destructuring\n\n  var cssMapping = item[3];\n\n  if (!cssMapping) {\n    return content;\n  }\n\n  if (useSourceMap && typeof btoa === 'function') {\n    var sourceMapping = toComment(cssMapping);\n    var sourceURLs = cssMapping.sources.map(function (source) {\n      return \"/*# sourceURL=\".concat(cssMapping.sourceRoot).concat(source, \" */\");\n    });\n    return [content].concat(sourceURLs).concat([sourceMapping]).join('\\n');\n  }\n\n  return [content].join('\\n');\n} // Adapted from convert-source-map (MIT)\n\n\nfunction toComment(sourceMap) {\n  // eslint-disable-next-line no-undef\n  var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));\n  var data = \"sourceMappingURL=data:application/json;charset=utf-8;base64,\".concat(base64);\n  return \"/*# \".concat(data, \" */\");\n}\n\n//# sourceURL=webpack:///./node_modules/css-loader/dist/runtime/api.js?");
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
-/*!********************************************************!*\
-  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
-  \********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\n\nmodule.exports = function (url, needQuotes) {\n  // eslint-disable-next-line no-underscore-dangle, no-param-reassign\n  url = url.__esModule ? url.default : url;\n\n  if (typeof url !== 'string') {\n    return url;\n  } // If url is already wrapped in quotes, remove them\n\n\n  if (/^['\"].*['\"]$/.test(url)) {\n    // eslint-disable-next-line no-param-reassign\n    url = url.slice(1, -1);\n  } // Should url be wrapped?\n  // See https://drafts.csswg.org/css-values-3/#urls\n\n\n  if (/[\"'() \\t\\n]/.test(url) || needQuotes) {\n    return \"\\\"\".concat(url.replace(/\"/g, '\\\\\"').replace(/\\n/g, '\\\\n'), \"\\\"\");\n  }\n\n  return url;\n};\n\n//# sourceURL=webpack:///./node_modules/css-loader/dist/runtime/getUrl.js?");
 
 /***/ }),
 
@@ -152,7 +140,18 @@ eval("module.exports = __webpack_require__.p + \"17f11cabb4ddfa0b45e39771b95a9ad
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return main; });\n/* harmony import */ var _images_welcome_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./images/welcome.jpg */ \"./src/component/images/welcome.jpg\");\n/* harmony import */ var _images_welcome_jpg__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_images_welcome_jpg__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _gifs_vapourtea_gif__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./gifs/vapourtea.gif */ \"./src/component/gifs/vapourtea.gif\");\n/* harmony import */ var _gifs_vapourtea_gif__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_gifs_vapourtea_gif__WEBPACK_IMPORTED_MODULE_1__);\n\n\nconst main = () => {\n\tlet container = document.createElement('div');\n\tcontainer.classList.add('container');\n\n\tlet welcome = document.createElement('div');\n\twelcome.classList.add('welcome');\n\tcontainer.appendChild(welcome);\n\n\tconst welcomePhoto = new Image();\n\twelcomePhoto.classList.add('imgFluid');\n\twelcomePhoto.src = _images_welcome_jpg__WEBPACK_IMPORTED_MODULE_0___default.a;\n\twelcome.appendChild(welcomePhoto);\n\treturn container\n}\ndocument.body.appendChild(main())\n\n\n//# sourceURL=webpack:///./src/component/homepage.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return main; });\n/* harmony import */ var _gifs_vapourtea_gif__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./gifs/vapourtea.gif */ \"./src/component/gifs/vapourtea.gif\");\n/* harmony import */ var _gifs_vapourtea_gif__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_gifs_vapourtea_gif__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _images_classic_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./images/classic.jpg */ \"./src/component/images/classic.jpg\");\n/* harmony import */ var _images_classic_jpg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_images_classic_jpg__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _images_desert_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./images/desert.jpg */ \"./src/component/images/desert.jpg\");\n/* harmony import */ var _images_desert_jpg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_images_desert_jpg__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _images_drinks_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./images/drinks.jpg */ \"./src/component/images/drinks.jpg\");\n/* harmony import */ var _images_drinks_jpg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_images_drinks_jpg__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _images_meal_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./images/meal.jpg */ \"./src/component/images/meal.jpg\");\n/* harmony import */ var _images_meal_jpg__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_images_meal_jpg__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _images_sandwich_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./images/sandwich.jpg */ \"./src/component/images/sandwich.jpg\");\n/* harmony import */ var _images_sandwich_jpg__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_images_sandwich_jpg__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var _images_cleaning_restaurant_kitchen_jpg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./images/cleaning-restaurant-kitchen.jpg */ \"./src/component/images/cleaning-restaurant-kitchen.jpg\");\n/* harmony import */ var _images_cleaning_restaurant_kitchen_jpg__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_images_cleaning_restaurant_kitchen_jpg__WEBPACK_IMPORTED_MODULE_6__);\n\n\n\n\n\n\n\n\nlet images = [_images_cleaning_restaurant_kitchen_jpg__WEBPACK_IMPORTED_MODULE_6___default.a, _images_classic_jpg__WEBPACK_IMPORTED_MODULE_1___default.a, _images_desert_jpg__WEBPACK_IMPORTED_MODULE_2___default.a, _images_drinks_jpg__WEBPACK_IMPORTED_MODULE_3___default.a, _images_meal_jpg__WEBPACK_IMPORTED_MODULE_4___default.a, _images_sandwich_jpg__WEBPACK_IMPORTED_MODULE_5___default.a]\n\nconst main = () => {\n\tlet container = document.createElement('div');\n\tcontainer.classList.add('container');\n\tcontainer.style.backgroundImage = _images_cleaning_restaurant_kitchen_jpg__WEBPACK_IMPORTED_MODULE_6___default.a;\n\n\tlet welcome = document.createElement('div');\n\twelcome.classList.add('welcome');\n\tcontainer.appendChild(welcome);\n\n\tconst welcomePhoto = new Image();\n\twelcomePhoto.classList.add('imgFluid');\n\twelcomePhoto.src = _gifs_vapourtea_gif__WEBPACK_IMPORTED_MODULE_0___default.a;\n\twelcome.appendChild(welcomePhoto);\n\n\tconst bottom = document.createElement('h3');\n\tbottom.innerHTML = \"Eat good, Eat healthy !!!\"\n\tcontainer.appendChild(bottom);\n\tbottom.classList.add('bottom');\n\n\tlet nextAndPrev = document.createElement('div');\n\tcontainer.appendChild(nextAndPrev);\n\tnextAndPrev.classList.add('nextAndPrev');\n\tlet prevPhoto = document.createElement('a');\n\tprevPhoto.classList.add('prev');\n\tlet nextPhoto = document.createElement('a');\n\tnextPhoto.classList.add('next');\n\tnextAndPrev.appendChild(nextPhoto);\n\tnextAndPrev.appendChild(prevPhoto);\n\n\treturn container\n}\ndocument.body.appendChild(main())\n\n\n//# sourceURL=webpack:///./src/component/homepage.js?");
+
+/***/ }),
+
+/***/ "./src/component/images/classic.jpg":
+/*!******************************************!*\
+  !*** ./src/component/images/classic.jpg ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"3f7d3abc5e680dc36e0727d30b20f2d4.jpg\";\n\n//# sourceURL=webpack:///./src/component/images/classic.jpg?");
 
 /***/ }),
 
@@ -167,14 +166,47 @@ eval("module.exports = __webpack_require__.p + \"8c13d26c956538aa2ec78ecc7d51067
 
 /***/ }),
 
-/***/ "./src/component/images/welcome.jpg":
-/*!******************************************!*\
-  !*** ./src/component/images/welcome.jpg ***!
-  \******************************************/
+/***/ "./src/component/images/desert.jpg":
+/*!*****************************************!*\
+  !*** ./src/component/images/desert.jpg ***!
+  \*****************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__.p + \"60b02ed54c058ec5c0de45af0c2b17d4.jpg\";\n\n//# sourceURL=webpack:///./src/component/images/welcome.jpg?");
+eval("module.exports = __webpack_require__.p + \"9d5a8993281bb942c8d5e51b35339c17.jpg\";\n\n//# sourceURL=webpack:///./src/component/images/desert.jpg?");
+
+/***/ }),
+
+/***/ "./src/component/images/drinks.jpg":
+/*!*****************************************!*\
+  !*** ./src/component/images/drinks.jpg ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"ccb9e7f7c579f71f9b309a35385f1d08.jpg\";\n\n//# sourceURL=webpack:///./src/component/images/drinks.jpg?");
+
+/***/ }),
+
+/***/ "./src/component/images/meal.jpg":
+/*!***************************************!*\
+  !*** ./src/component/images/meal.jpg ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"fb8304542dbe91b8a3ec45edcf084208.jpg\";\n\n//# sourceURL=webpack:///./src/component/images/meal.jpg?");
+
+/***/ }),
+
+/***/ "./src/component/images/sandwich.jpg":
+/*!*******************************************!*\
+  !*** ./src/component/images/sandwich.jpg ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"ac018fbe8ec5bd4b98bf090db1a113ef.jpg\";\n\n//# sourceURL=webpack:///./src/component/images/sandwich.jpg?");
 
 /***/ }),
 
