@@ -24,10 +24,15 @@ $ git clone https://github.com/forison/simpleRestaurantPage.git
 $ cd simpleRestaurantPage
 ```
 > git clone https://github.com/forison/simpleRestaurantPage
+
 > cd simpleRestaurantPage
+
 > npm install
+
 > npm watch
+
 > npm start
+
 > open with your favourite web browser.
 
 ## Designed and developed by
