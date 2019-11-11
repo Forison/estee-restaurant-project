@@ -19,7 +19,7 @@ const chicken = () => {
 	const leftSideImg = new Image();
 	leftSideImg.src = chick;
 	leftSideImg.classList.add('leftSideImg');
-	leftSide.appendChild(leftSideImg)
+	leftSide.appendChild(leftSideImg);
 
 	const title = document.createElement('h3');
 	title.innerHTML = 'Delicious Chicken Tigh';
@@ -30,11 +30,11 @@ const chicken = () => {
 	title.classList.add('description');
 	description.innerHTML = 'This is food is really nice you should try it \n This is food is really nice you should try it ';
 	rightSide.appendChild(description);
-	
+
 	const butWrap = document.createElement('div');
 	butWrap.classList.add('butWrap');
 	rightSide.appendChild(butWrap);
-	
+
 	const but = document.createElement('button');
 	but.classList.add('ordFood');
 	but.innerHTML = 'Order Food';
@@ -48,4 +48,4 @@ const chicken = () => {
 	return sectionOne;
 }
 document.body.appendChild(chicken());
-export { chicken as default }
+export { chicken as default };

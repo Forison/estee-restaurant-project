@@ -1,20 +1,20 @@
 const navigation = () => {
-	let navbar = document.createElement('nav');
-	let navWrap = document.createElement('div');
+	const navbar = document.createElement('nav');
+	const navWrap = document.createElement('div');
 	navWrap.classList.add('navWrap');
 	navbar.appendChild(navWrap);
 
-	let logoWrap = document.createElement('div');
-	let linkWrap = document.createElement('div');
+	const logoWrap = document.createElement('div');
+	const linkWrap = document.createElement('div');
 	logoWrap.classList.add('logoWrap');
 	linkWrap.classList.add('linkWrap');
 	navWrap.appendChild(logoWrap);
 	navWrap.appendChild(linkWrap);
 	// create logo for navbar
-	let logo = document.createElement('a');
+	const logo = document.createElement('a');
 	logo.classList.add('logo');
 	logoWrap.appendChild(logo);
-	logo.innerHTML = "Linda"
+	logo.innerHTML = "Linda";
 	logo.addEventListener('click', () => {
 		let container = document.querySelector('.container');
 		container.style.display = 'block';
@@ -25,12 +25,12 @@ const navigation = () => {
 		sectionOne.style.background = '#fff';
 	});
 	// create links for navbar
-	let navLinkOne = document.createElement('span');
-	let navAnchorOne = document.createElement('a');
+	const navLinkOne = document.createElement('span');
+	const navAnchorOne = document.createElement('a');
 	navLinkOne.appendChild(navAnchorOne);
 	linkWrap.appendChild(navLinkOne);
-	navAnchorOne.innerHTML = 'Chicken'
-	navAnchorOne.href = "#"
+	navAnchorOne.innerHTML = 'Chicken';
+	navAnchorOne.href = "#";
 	navAnchorOne.addEventListener('click', () => {
 		let container = document.querySelector('.container');
 		container.style.display = 'none';
@@ -42,12 +42,12 @@ const navigation = () => {
 		sectionOne.style.background = '#fff';
 	});
 
-	let navLinkTwo = document.createElement('span');
-	let navAnchorTwo = document.createElement('a');
+	const navLinkTwo = document.createElement('span');
+	const navAnchorTwo = document.createElement('a');
 	navLinkTwo.appendChild(navAnchorTwo);
 	linkWrap.appendChild(navLinkTwo);
-	navAnchorTwo.innerHTML = 'Sandwich'
-	navAnchorTwo.href = "#"
+	navAnchorTwo.innerHTML = 'Sandwich';
+	navAnchorTwo.href = "#";
 	navAnchorTwo.addEventListener('click', () => {
 		let container = document.querySelector('.container');
 		container.style.display = 'none';
@@ -59,8 +59,8 @@ const navigation = () => {
 		sectionOne.style.background = '#fff';
 	});
 
-	let navLinkThree = document.createElement('span');
-	let navAnchorThree = document.createElement('a');
+	const navLinkThree = document.createElement('span');
+	const navAnchorThree = document.createElement('a');
 	navLinkThree.appendChild(navAnchorThree);
 	linkWrap.appendChild(navLinkThree);
 	navAnchorThree.innerHTML = 'Meal';
@@ -76,8 +76,8 @@ const navigation = () => {
 		sectionOne.style.background = '#fff';
 	});
 
-	let navLinkFour = document.createElement('span');
-	let navAnchorFour = document.createElement('a');
+	const navLinkFour = document.createElement('span');
+	const navAnchorFour = document.createElement('a');
 	navLinkFour.appendChild(navAnchorFour);
 	linkWrap.appendChild(navLinkFour);
 	navAnchorFour.innerHTML = '$5 fill ups';
@@ -92,271 +92,7 @@ const navigation = () => {
 		document.querySelector('.sectionOne').style.display = 'none';
 		sectionOne.style.background = '#fff';
 	});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
-
-	return navbar
+	return navbar;
 }
-document.body.appendChild(navigation())
-export { navigation as default }
+document.body.appendChild(navigation());
+export { navigation as default };

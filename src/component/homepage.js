@@ -6,7 +6,7 @@ import Meal from './images/meal.jpg';
 import Sandwich from './images/sandwich.jpg';
 import Cleaning from './images/cleaning-restaurant-kitchen.jpg';
 
-const images = [Cleaning, Classic, Desert, Drink, Meal, Sandwich]
+const images = [Cleaning, Classic, Desert, Drink, Meal, Sandwich];
 
 const main = () => {
 	let i = 0;
@@ -33,7 +33,7 @@ const main = () => {
 	welcome.appendChild(welcomePhoto);
 
 	const bottom = document.createElement('h3');
-	bottom.innerHTML = "Eat good, Eat healthy !!!"
+	bottom.innerHTML = "Eat good, Eat healthy !!!";
 	container.appendChild(bottom);
 	bottom.classList.add('bottom');
 
@@ -52,11 +52,11 @@ const main = () => {
 		containerImgWrap.src = images[i];
 	});
 	prevPhoto.addEventListener('click', (e) => {
-		i < 1 ? i = images.length -1 : i -= 1;
+		i < 1 ? i = images.length - 1 : i -= 1;
 		containerImgWrap.src = images[i];
 	});
-	return container
+	return container;
 }
 
-document.body.appendChild(main())
-export { main as default }
+document.body.appendChild(main());
+export { main as default };
