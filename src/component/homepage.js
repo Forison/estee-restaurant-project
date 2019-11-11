@@ -48,11 +48,11 @@ const main = () => {
 	nextAndPrev.appendChild(prevPhoto);
 
 	nextPhoto.addEventListener('click', () => {
-		i === images.length - 1 ? i = 0 : i += 1;
+		(i === images.length - 1) ? i = 0 : i += 1;
 		containerImgWrap.src = images[i];
 	});
 	prevPhoto.addEventListener('click', () => {
-		i < 1 ? i = images.length - 1 : i -= 1;
+		(i < 1) ? i = images.length - 1 : i -= 1;
 		containerImgWrap.src = images[i];
 	});
 	return container;
