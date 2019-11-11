@@ -6,24 +6,24 @@ import Meal from './images/meal.jpg';
 import Sandwich from './images/sandwich.jpg';
 import Cleaning from './images/cleaning-restaurant-kitchen.jpg';
 
-let images = [Cleaning, Classic, Desert, Drink, Meal, Sandwich]
+const images = [Cleaning, Classic, Desert, Drink, Meal, Sandwich]
 
 const main = () => {
 	let i = 0;
-	let container = document.createElement('div');
+	const container = document.createElement('div');
 	container.classList.add('container');
 
-	let bar = document.createElement('div');
+	const bar = document.createElement('div');
 	bar.classList.add('bar');
 	container.appendChild(bar);
 
-	let containerImgWrap = new Image();
+	const containerImgWrap = new Image();
 	container.appendChild(containerImgWrap)
 	containerImgWrap.src = images[i];
 	containerImgWrap.classList.add('mainImg');
 
 
-	let welcome = document.createElement('div');
+	const welcome = document.createElement('div');
 	welcome.classList.add('welcome');
 	container.appendChild(welcome);
 
@@ -37,12 +37,12 @@ const main = () => {
 	container.appendChild(bottom);
 	bottom.classList.add('bottom');
 
-	let nextAndPrev = document.createElement('div');
+	const nextAndPrev = document.createElement('div');
 	bar.appendChild(nextAndPrev);
 	nextAndPrev.classList.add('nextAndPrev');
-	let prevPhoto = document.createElement('a');
+	const prevPhoto = document.createElement('a');
 	prevPhoto.classList.add('prev');
-	let nextPhoto = document.createElement('a');
+	const nextPhoto = document.createElement('a');
 	nextPhoto.classList.add('next');
 	nextAndPrev.appendChild(nextPhoto);
 	nextAndPrev.appendChild(prevPhoto);

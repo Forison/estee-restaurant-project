@@ -5,6 +5,8 @@ files:
   ignore:
       - 'dist/*'
       - '.eslintrc.js'
+      - './src/component/*'
+      - './src/index.js'
 
 
 
