@@ -1,8 +1,8 @@
-import Sand from './images/sandwich.jpg';
+import dish from './images/side.jpg';
 
-const sandwich = () => {
-    let sectionTwo = document.createElement('div');
-    sectionTwo.classList.add('sectionTwo');
+const sideAttraction = () => {
+    let sectionFour = document.createElement('div');
+    sectionFour.classList.add('sectionFour');
 
     let sectionWrap = document.createElement('div');
     sectionWrap.classList.add('sectionWrap');
@@ -14,15 +14,15 @@ const sandwich = () => {
     rightSide.classList.add('rightSide');
     sectionWrap.appendChild(leftSide);
     sectionWrap.appendChild(rightSide);
-    sectionTwo.appendChild(sectionWrap);
+    sectionFour.appendChild(sectionWrap);
 
     let leftSideImg = new Image();
-    leftSideImg.src = Sand;
+    leftSideImg.src = dish;
     leftSideImg.classList.add('leftSideImg');
     leftSide.appendChild(leftSideImg)
 
     let title = document.createElement('h3');
-    title.innerHTML = 'Delicious Sandwich';
+    title.innerHTML = 'Delicious Side food';
     title.classList.add('title');
     rightSide.appendChild(title);
 
@@ -45,7 +45,7 @@ const sandwich = () => {
     res.innerHTML = 'Reservation';
     butWrap.appendChild(res);
 
-    return sectionTwo;
+    return sectionFour;
 }
-document.body.appendChild(sandwich());
-export { sandwich as default }
+document.body.appendChild(sideAttraction());
+export { sideAttraction as default }
