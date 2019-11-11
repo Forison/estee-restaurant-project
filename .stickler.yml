@@ -5,12 +5,6 @@ files:
   ignore:
       - 'dist/*'
       - '.eslintrc.js'
-      - './src/component/chicken.js'
-      - './src/component/homepage.js'
-      - './src/component/meal.js'
-      - './src/component/navigation.js'
-      - './src/component/sandwich.js'
-      - './src/index.js'
 
 
 
