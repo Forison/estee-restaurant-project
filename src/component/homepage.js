@@ -56,7 +56,11 @@ const main = () => {
 		containerImgWrap.src = images[i];
 	});
 	prevPhoto.addEventListener('click', () => {
-		(i < 1) ? i = images.length - 1 : i -= 1;
+		if (i < 1) {
+			i = images.length - 1;
+		} else {
+			i -= 1;
+		}
 		containerImgWrap.src = images[i];
 	});
 	return container;
