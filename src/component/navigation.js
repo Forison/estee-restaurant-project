@@ -22,16 +22,16 @@ const navigation = () => {
 		document.querySelector('.sectionThree').style.display = 'none';
 		document.querySelector('.sectionTwo').style.display = 'none';
 		document.querySelector('.sectionFour').style.display = 'none';
-	});;
+	});
 	// create links for navbar
 	const navLinkOne = document.createElement('span');
 	const navAnchorOne = document.createElement('a');
 	navLinkOne.appendChild(navAnchorOne);
 	linkWrap.appendChild(navLinkOne);
 	navAnchorOne.innerHTML = 'Chicken';
-	navAnchorOne.href = "#";
+	navAnchorOne.href = '#';
 	navAnchorOne.addEventListener('click', () => {
-		let container = document.querySelector('.container');
+		const container = document.querySelector('.container');
 		container.style.display = 'none';
 		const sectionOne = document.querySelector('.sectionOne');
 		sectionOne.style.display = 'block';
@@ -46,7 +46,7 @@ const navigation = () => {
 	navLinkTwo.appendChild(navAnchorTwo);
 	linkWrap.appendChild(navLinkTwo);
 	navAnchorTwo.innerHTML = 'Sandwich';
-	navAnchorTwo.href = "#";
+	navAnchorTwo.href = '#';
 	navAnchorTwo.addEventListener('click', () => {
 		const container = document.querySelector('.container');
 		container.style.display = 'none';
@@ -63,7 +63,7 @@ const navigation = () => {
 	navLinkThree.appendChild(navAnchorThree);
 	linkWrap.appendChild(navLinkThree);
 	navAnchorThree.innerHTML = 'Meal';
-	navAnchorThree.href = "#";
+	navAnchorThree.href = '#';
 	navAnchorThree.addEventListener('click', () => {
 		const container = document.querySelector('.container');
 		container.style.display = 'none';
@@ -80,8 +80,8 @@ const navigation = () => {
 	navLinkFour.appendChild(navAnchorFour);
 	linkWrap.appendChild(navLinkFour);
 	navAnchorFour.innerHTML = '$5 fill ups';
-	navAnchorFour.href = "#";
-	navAnchorFour.addEventListener("click", () => {
+	navAnchorFour.href = '#';
+	navAnchorFour.addEventListener('click', () => {
 		const container = document.querySelector('.container');
 		container.style.display = 'none';
 		const sectionOne = document.querySelector('.sectionFour');

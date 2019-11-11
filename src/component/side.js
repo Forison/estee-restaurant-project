@@ -19,7 +19,7 @@ const sideAttraction = () => {
 	const leftSideImg = new Image();
 	leftSideImg.src = dish;
 	leftSideImg.classList.add('leftSideImg');
-	leftSide.appendChild(leftSideImg)
+	leftSide.appendChild(leftSideImg);
 
 	const title = document.createElement('h3');
 	title.innerHTML = 'Delicious Side food';
@@ -46,6 +46,6 @@ const sideAttraction = () => {
 	butWrap.appendChild(res);
 
 	return sectionFour;
-}
+};
 document.body.appendChild(sideAttraction());
 export { sideAttraction as default };
