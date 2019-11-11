@@ -14,16 +14,15 @@ const navigation = () => {
 	const logo = document.createElement('a');
 	logo.classList.add('logo');
 	logoWrap.appendChild(logo);
-	logo.innerHTML = "Linda";
+	logo.innerHTML = 'Linda';
 	logo.addEventListener('click', () => {
-		let container = document.querySelector('.container');
+		const container = document.querySelector('.container');
 		container.style.display = 'block';
 		document.querySelector('.sectionOne').style.display = 'none';
 		document.querySelector('.sectionThree').style.display = 'none';
 		document.querySelector('.sectionTwo').style.display = 'none';
 		document.querySelector('.sectionFour').style.display = 'none';
-		sectionOne.style.background = '#fff';
-	});
+	});;
 	// create links for navbar
 	const navLinkOne = document.createElement('span');
 	const navAnchorOne = document.createElement('a');
@@ -34,7 +33,7 @@ const navigation = () => {
 	navAnchorOne.addEventListener('click', () => {
 		let container = document.querySelector('.container');
 		container.style.display = 'none';
-		let sectionOne = document.querySelector('.sectionOne');
+		const sectionOne = document.querySelector('.sectionOne');
 		sectionOne.style.display = 'block';
 		document.querySelector('.sectionThree').style.display = 'none';
 		document.querySelector('.sectionTwo').style.display = 'none';
@@ -49,9 +48,9 @@ const navigation = () => {
 	navAnchorTwo.innerHTML = 'Sandwich';
 	navAnchorTwo.href = "#";
 	navAnchorTwo.addEventListener('click', () => {
-		let container = document.querySelector('.container');
+		const container = document.querySelector('.container');
 		container.style.display = 'none';
-		let sectionOne = document.querySelector('.sectionTwo');
+		const sectionOne = document.querySelector('.sectionTwo');
 		sectionOne.style.display = 'block';
 		document.querySelector('.sectionThree').style.display = 'none';
 		document.querySelector('.sectionFour').style.display = 'none';
@@ -66,9 +65,9 @@ const navigation = () => {
 	navAnchorThree.innerHTML = 'Meal';
 	navAnchorThree.href = "#";
 	navAnchorThree.addEventListener('click', () => {
-		let container = document.querySelector('.container');
+		const container = document.querySelector('.container');
 		container.style.display = 'none';
-		let sectionOne = document.querySelector('.sectionThree');
+		const sectionOne = document.querySelector('.sectionThree');
 		sectionOne.style.display = 'block';
 		document.querySelector('.sectionFour').style.display = 'none';
 		document.querySelector('.sectionTwo').style.display = 'none';
@@ -82,10 +81,10 @@ const navigation = () => {
 	linkWrap.appendChild(navLinkFour);
 	navAnchorFour.innerHTML = '$5 fill ups';
 	navAnchorFour.href = "#";
-	navAnchorFour.addEventListener('click', () => {
-		let container = document.querySelector('.container');
+	navAnchorFour.addEventListener("click", () => {
+		const container = document.querySelector('.container');
 		container.style.display = 'none';
-		let sectionOne = document.querySelector('.sectionFour');
+		const sectionOne = document.querySelector('.sectionFour');
 		sectionOne.style.display = 'block';
 		document.querySelector('.sectionThree').style.display = 'none';
 		document.querySelector('.sectionTwo').style.display = 'none';

@@ -46,6 +46,6 @@ const chicken = () => {
 	butWrap.appendChild(res);
 
 	return sectionOne;
-}
+};
 document.body.appendChild(chicken());
 export { chicken as default };

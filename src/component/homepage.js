@@ -18,7 +18,7 @@ const main = () => {
 	container.appendChild(bar);
 
 	const containerImgWrap = new Image();
-	container.appendChild(containerImgWrap)
+	container.appendChild(containerImgWrap);
 	containerImgWrap.src = images[i];
 	containerImgWrap.classList.add('mainImg');
 
@@ -33,7 +33,7 @@ const main = () => {
 	welcome.appendChild(welcomePhoto);
 
 	const bottom = document.createElement('h3');
-	bottom.innerHTML = "Eat good, Eat healthy !!!";
+	bottom.innerHTML = 'Eat good, Eat healthy !!!';
 	container.appendChild(bottom);
 	bottom.classList.add('bottom');
 
@@ -47,16 +47,15 @@ const main = () => {
 	nextAndPrev.appendChild(nextPhoto);
 	nextAndPrev.appendChild(prevPhoto);
 
-	nextPhoto.addEventListener('click', (e) => {
-		i == images.length - 1 ? i = 0 : i += 1;
+	nextPhoto.addEventListener('click', () => {
+		i === images.length - 1 ? i = 0 : i += 1;
 		containerImgWrap.src = images[i];
 	});
-	prevPhoto.addEventListener('click', (e) => {
+	prevPhoto.addEventListener('click', () => {
 		i < 1 ? i = images.length - 1 : i -= 1;
 		containerImgWrap.src = images[i];
 	});
 	return container;
-}
-
+};
 document.body.appendChild(main());
 export { main as default };

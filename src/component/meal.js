@@ -46,6 +46,6 @@ const meal = () => {
 	butWrap.appendChild(res);
 
 	return sectionThree;
-}
+};
 document.body.appendChild(meal());
 export { meal as default };
