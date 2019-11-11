@@ -15,6 +15,6 @@ module.exports = {
         sourceType: 'module',
     },
     rules: {
-        indentation: 4
+        
     },
 };
