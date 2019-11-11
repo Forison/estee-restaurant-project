@@ -48,4 +48,4 @@ const sideAttraction = () => {
     return sectionFour;
 }
 document.body.appendChild(sideAttraction());
-export { sideAttraction as default }
+export { sideAttraction as default };

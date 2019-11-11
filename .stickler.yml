@@ -8,9 +8,7 @@ files:
     ignore:
         - 'src/generated/*'
         - 'webroot/bower_components/*'
-        - '.src/component/*'
-        - '.src/index.js'
-        - '.src/style.css'
+       
 
 
 
