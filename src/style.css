@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-image: linear-gradient( #ff0000, #000);
+    background: linear-gradient( #ff0000, #000);
 }
 nav{
     background-image: linear-gradient( #ff0000, #000);
@@ -46,10 +46,10 @@ a:hover{
 }
 /* container  */
 .container{
-    /* background-image: url(./component/images/cleaning-restaurant-kitchen.jpg); */
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 500px;
+  height: 500px;
+}
+.container:hover{
+ cursor: pointer;
 }
 .mainImg{
 	width: 100%;
@@ -114,4 +114,58 @@ a:hover{
     left: 200px;
     position: absolute;
     top: 540px;
+}
+.sectionOne{
+	display: none;
+    margin: 0 auto;
+}
+.leftSide{
+	height: 500px;
+	width: 60%;
+}
+.rightSide{
+    border: 10px solid #ff0000;
+    border-radius: 20px;
+	border-left: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 5%;
+    margin-top: 5%;
+    height: 200px;
+    padding: 1.5% 3.5% 5%;
+    transform: rotate(-20deg);
+    width: 20%;
+}
+.leftSideImg{
+	height: 100%;
+	width: 100%;
+}
+.title{
+	text-align: center;
+}
+
+.description{
+	padding-left: 5%;
+	padding-right: 5%;
+}
+.resBut{
+    border: 0;
+    border-radius: 3px;
+    padding: 10px;
+    background: #053800;
+    color: #fff;
+}
+.ordFood{
+    border: 0;
+    border-radius: 3px;
+    padding: 10px;
+    background: #dbeb00;
+    color: #fff;
+}
+.butWrap{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+.sectionTwo{
+    display: none;
 }

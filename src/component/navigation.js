@@ -22,6 +22,13 @@ const navigation = () => {
 	linkWrap.appendChild(navLinkOne);
 	navAnchorOne.innerHTML = 'Chicken'
 	navAnchorOne.href = "#"
+	navAnchorOne.addEventListener('click', () => {
+		let container = document.querySelector('.container');
+		container.style.display = 'none';
+		let sectionOne = document.querySelector('.sectionOne');
+		sectionOne.style.display = 'block';
+		sectionOne.style.background = '#fff';
+	});
 
 	let navLinkTwo = document.createElement('span');
 	let navAnchorTwo = document.createElement('a');
@@ -29,6 +36,13 @@ const navigation = () => {
 	linkWrap.appendChild(navLinkTwo);
 	navAnchorTwo.innerHTML = 'Sandwich'
 	navAnchorTwo.href = "#"
+	navAnchorTwo.addEventListener('click', () => {
+		let container = document.querySelector('.container');
+		container.style.display = 'none';
+		let sectionOne = document.querySelector('.sectionTwo');
+		sectionOne.style.display = 'block';
+		sectionOne.style.background = '#fff';
+	});
 
 	let navLinkThree = document.createElement('span');
 	let navAnchorThree = document.createElement('a');

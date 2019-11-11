@@ -1,7 +1,7 @@
 import Coffee from './gifs/vapourtea.gif';
 import Classic from './images/classic.jpg';
-import Desert from './images/desert.jpg';
-import Drink from './images/drinks.jpg';
+import Desert from './images/chickenTigh.jpg';
+import Drink from './images/fillUp.jpg';
 import Meal from './images/meal.jpg';
 import Sandwich from './images/sandwich.jpg';
 import Cleaning from './images/cleaning-restaurant-kitchen.jpg';
@@ -50,12 +50,10 @@ const main = () => {
 	nextPhoto.addEventListener('click', (e) => {
 		i == images.length - 1 ? i = 0 : i += 1;
 		containerImgWrap.src = images[i];
-
 	});
 	prevPhoto.addEventListener('click', (e) => {
 		i < 1 ? i = images.length -1 : i -= 1;
 		containerImgWrap.src = images[i];
-		console.log(i)
 	});
 	return container
 }
