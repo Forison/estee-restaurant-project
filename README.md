@@ -1,7 +1,7 @@
 # simpleRestaurantPage 
 
 A practical demonstration of designing a website with javascript(webpack)
-This project is designed with a plain vanilla Javascript to emulate a single page appplication or tab application.
+This project is designed with a plain vanilla Javascript to emulate a single page application or tab application.
 The project is part of a series of projects to be completed by students of [Microverse](https://www.microverse.org/ "The Global School for Remote Software Developers!").
 
 ![restaurant](./restPage.png)
