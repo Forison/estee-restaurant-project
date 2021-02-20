@@ -1,4 +1,4 @@
-# simpleRestaurantPage 
+# Linda restaurant project 
 
 A practical demonstration of designing a website with javascript(webpack)
 This project is designed with a plain vanilla Javascript to emulate a single page appplication or tab application.
